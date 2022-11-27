@@ -12,8 +12,9 @@ pattern = re.compile(r"(\d{4}\-\d{2}\-\d{2})?(\d{1}\/\d{2}\/\d{4})?(\d{2}\.\d{2}
 matches = pattern.finditer(html)
 for item in matches:
    if len(item.group()) > 0:
-    print(item.group())
-    dates.append(item.group())
+        if item.group() not in dates:
+            print(item.group())
+            dates.append(item.group())
 with open("final_dates.json",'w',encoding='utf-8') as f:
     json.dump(dates,f,ensure_ascii=False,indent=4)
     f.close()
