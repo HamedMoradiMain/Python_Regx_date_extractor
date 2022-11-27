@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://help.scribesoft.com/scribe/en/sol/general/datetime.htm -->
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="[%=MyVariables.ProdName%]|[%=MyVariables.ProdName%] Connectors Guide|Text File As Source|Configuring Text File As A Source Connection|Fields Tab" data-mc-conditions="Default.ConnectorOnly" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Text Connector DateTime Formats</title>
+        <!-- Google Tag Manager Important notes: Make sure that all quotes are straight quotes, wrap the script in CDATA tags  <script>/*<![CDATA[*/ (script stuff)  /*]]>*/</script>-->
+        <!-- Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+        <!-- Cookie Consent CSS is loaded here now and not through the scribe.css file-->
+        <!-- Cookie Consent JS -->
+        <!-- <script src="../scripts/cookieconsent.js">
+        </script>-->
+        <link href="./res_files/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./res_files/scribe.css" rel="stylesheet" type="text/css">
+        <link href="./res_files/clear.css" rel="stylesheet" data-mc-stylesheet-type="table">
+        <link href="./res_files/cc-gdpr-adapted.min.css" rel="stylesheet">
+        <link href="./res_files/standard.css" rel="stylesheet" data-mc-stylesheet-type="table">
+        <script type="text/javascript" async="" src="./res_files/munchkin.js.download"></script><script type="text/javascript" async="" src="./res_files/xdc.js.download"></script><script type="text/javascript" async="" src="./res_files/analytics.js.download"></script><script async="" src="./res_files/gtm.js.download"></script><script src="./res_files/jquery.min.js.download" type="text/javascript">
+        </script>
+        <script src="./res_files/purify.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/require.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/require.config.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/foundation.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/plugins.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapGlobal.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapDom.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapUtilities.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapXhr.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapTextEffects.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapSlideshow.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapMessageBus.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapMessageBus.CrossFrame.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapDefault.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapMediaQueries.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapAccessibility.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapHelpSystem.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapAliasFile.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapTopicFeedback.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapFeedbackHelper.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapSkinHelper.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapToc.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapToc.Breadcrumbs.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapToc.MiniToc.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapToc.SideMenu.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapIndex.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapGlossary.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapParser.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapSearch.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapNavigateTopics.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapLms.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapELearning.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapTopic.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapFeedback.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapMicroContentComponent.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapSearchHelper.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapTopicElements.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./res_files/MadCapTriPane.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script>/*<![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KDQ5NC');/*]]>*/</script>
+        <script src="./res_files/cookieconsent.min.js.download">
+        </script>
+        <script>/* <![CDATA[ */
+			window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+			"palette": {
+			"popup": {
+			"background": "#efeeee",
+			"text": "#333333"
+			},
+			"button": {
+			"background": "#7dbd57",
+			"text": "#ffffff"
+			}
+			},
+			"content": {
+			"message": "This site uses cookies to provide you with the best browsing experience. By closing this banner or continuing to browse the site you are agreeing to our use of cookies. To disable cookies, read our",
+			"dismiss": "I agree",
+			"link": "Privacy Policy",
+			"href": "https://www.tibco.com/company/privacy"
+			}
+			})});
+		/* ]]> */</script>
+    <meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xxlarge"><style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../Data/Breakpoints.js" src="./res_files/Breakpoints.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../Data/Language.js" src="./res_files/Language.js.download"></script><script type="text/javascript" async="" src="./res_files/munchkin.js(1).download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../Data/Tocs/ScribeOnlineHelpCenter.js" src="./res_files/ScribeOnlineHelpCenter.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../Data/Tocs/ScribeOnlineHelpCenter_Chunk0.js" src="./res_files/ScribeOnlineHelpCenter_Chunk0.js.download"></script><style></style></head>
+    <body class="height-container" style="min-height: calc(100vh - 16px);"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--1254565456 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This site uses cookies to provide you with the best browsing experience. By closing this banner or continuing to browse the site you are agreeing to our use of cookies. To disable cookies, read our <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.tibco.com/company/privacy" rel="noopener noreferrer nofollow" target="_blank">Privacy Policy</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">I agree</a></div><!--googleon: all--></div>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="https://help.scribesoft.com/scribe/en/index.htm#sol/general/datetime.htm">Open Table of Contents</a>
+        </p>
+        <!-- Google Tag Manager (noscript)  -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDQ5NC" height="0" width="0" style="display:none; visibility:hidden"></iframe>
+        </noscript>
+        <div class="container">
+            <p style="float: right;">
+                <img src="./res_files/print.png" onclick="window.print();return false;">
+            </p>
+        </div>
+        <div role="main" id="mc-main-content">
+            <h1>Text Connector DateTime Formats</h1>
+            <p>The Fields tab on the Text File As A Source or Text File As A Target Connection dialog has an option to set the data type for the selected field. If you choose DateTime, you must enter the format for the Date/Time in the Date Format field using one of the following formats:</p>
+            <ul>
+                <li>yyyy-M-d — Example: 2013-6-23</li>
+                <li>M/d/yyyy  — Example: 6/23/2013</li>
+                <li>d/M/yyyy  —  Example: 23/6/2013</li>
+                <li>dd.MM.yyyy —  Example: 23.06.2013</li>
+                <li>dd/MM/yyyy  — Example: 23/06/2013</li>
+                <li>yyyy/M/d  —  Example: 2013/6/23</li>
+                <li>yyyy-MM-dd —  Example: 2013-06-23</li>
+                <li>yyyyMMddTHH:mmzzz  —  Example: 20130623T13:22-0500</li>
+            </ul>
+            <p>You can enter a format that reflects your data, using any of the following elements.</p>
+            <h2>Date And Time Formats</h2>
+            <table class="TableStyle-Standard" style="mc-table-style: url(&#39;../../properties/tablestyles/standard.css&#39;);" cellspacing="0">
+                <colgroup><col style="width: 160px;" class="TableStyle-Standard-Column-Column1">
+                
+                <col style="width: 454px;" class="TableStyle-Standard-Column-Center">
+                
+                </colgroup><thead>
+                    <tr class="TableStyle-Standard-Head-Header1">
+                        <th class="TableStyle-Standard-HeadE-Column1-Header1" style="text-align: left;" scope="col">Format</th>
+                        <th class="TableStyle-Standard-HeadD-Center-Header1" style="text-align: left;" scope="col">Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Month</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">M</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Month, from 1 through 12</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">MM</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Two digit month, from 01 through 12</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">MMM</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Abbreviated name of the month, for example: Jan, Feb, etc.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">MMMM</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Full name of the month, for example: January, February, etc.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Day</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">d</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Day of the month from 1 through 31</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">dd</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Day of the month from 01 through 31</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">ddd</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Standard abbreviation for the day of the week, for example: Mon, Tue, etc.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">dddd</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Full name of the day of the week, for example: Monday, Tuesday, etc.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Year</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">y</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Year from 0 to 99</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">yy</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Year from 00 to 99</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">yyy</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Year with minimum of 3 digits</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">yyyy</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Year as a four digit number</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Hour</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">h</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hour using 12-hour clock from 1 - 12</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">hh</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hour using 12-hour clock from 01 - 12</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">H</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hour using 24-hour clock from 0 - 24</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">HH</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hour using 24-hour clock from 00 - 24</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Minute</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">m</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hour using 12-hour clock from 1 - 12</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">mm</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hour using 12-hour clock from 01 - 12</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Second</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">s</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Second, from 0 through 59</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">ss</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Second, from 00 through 59</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Banner" data-mc-pattern="6">
+                        <td class="TableStyle-Standard-BodyD-Column1-Banner" colspan="2">
+                            <p class="tableheading">Other</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">t</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">First character of the AM/PM designator</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">tt</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">AM/PM designator</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">T</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">A literal to separate date and time in 8061 or other formats</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">z</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hours offset from UTC, with no leading zeros — Example: -5 or +530</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">zz</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hours offset from UTC, with leading zero — Example: -05 or +0530</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">zzz</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Hours and minutes offset from UTC, with leading zeros — Example -0500 or +0530</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyE-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">g or gg</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyD-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Period or era, such as A.D.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Standard-Body-Body1">
+                        <td class="TableStyle-Standard-BodyB-Column1-Body1" style="text-align: left;">
+                            <p class="tablebody">K</p>
+                        </td>
+                        <td class="TableStyle-Standard-BodyA-Center-Body1" style="text-align: left;">
+                            <p class="tablebody">Zone information</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>DateTime Examples</h2>
+            <h3>US Standard Format</h3>
+            <p>M/d/yyyy — Example: 6/23/2013</p>
+            <p>h:mm:ss tt — Example: 5:45:22 AM and 5:45:22 PM</p>
+            <h3>ISO8601 Format</h3>
+            <p>20130623T0545-05000 using the format yyyymmddTHHmmzzz</p>
+            <h3>Russia And Germany Standard Format</h3>
+            <p>dd.MM.yyyy — Example: 23.06.2013</p>
+            <p>H:mm:ss — Example: 5:45:22 (and 17:45:22)</p>
+            <h3>UK, Spain, France and Italy standard format</h3>
+            <p>dd/MM/yyyy — Example: 23/06/2013</p>
+            <p>HH:mm:ss — Example: 05:45:22 and 17:45:22</p>
+            <h3>China And Japan Standard Format</h3>
+            <p>yyyy/M/d — Example: 23/6/2013</p>
+            <p><span class="b">Long Format:</span> yyyy年M月dd日 — Example: 2013年6月23日</p>
+            <p>H:mm:ss — Example: 05:45:22 and 17:45:22</p>
+            <h3>Korea Standard Format</h3>
+            <p>yyyy-MM-dd — Example: 23/6/2013</p>
+            <p><span class="b">Long Format:</span> yyyy년 M월 dd일 — Example: 2013년 6월 23일)</p>
+            <p>tt h:mm:ss — Example: AM 5:45:22 and PM 5:45:22</p>
+            <h4>Related Topics</h4>
+            <p class="SeeItem"><a href="https://help.scribesoft.com/scribe/en/sol/conn/text_file_fields_tab.htm" class="MCXref xref">Source Text Connection — Fields Tab</a>
+            </p>
+            <p class="SeeItem"><a href="https://help.scribesoft.com/scribe/en/sol/conn/text_target_file_fields_tab.htm" class="MCXref xref">Target Text Connection — Fields Tab</a>
+            </p>
+        </div>
+        <p style="text-align: center;">&nbsp;</p>
+        <p style="text-align: center;">
+        </p><div class="footer">
+            <div>
+                <table class="TableStyle-Clear" style="mc-table-style: url(&#39;../../properties/tablestyles/clear.css&#39;);width: 100%;margin-left: 0;margin-right: auto;" cellspacing="1">
+                    <colgroup><col class="TableStyle-Clear-Column-Column1">
+                    <col class="TableStyle-Clear-Column-Column1">
+                    </colgroup><tbody>
+                        <tr class="TableStyle-Clear-Body-Body1">
+                            <td class="TableStyle-Clear-BodyB-Column1-Body1">
+                                <p class="tablebody">
+                                    <img src="./res_files/tibco_logo.png">
+                                </p>
+                            </td>
+                            <td class="TableStyle-Clear-BodyA-Column1-Body1">
+                                <p class="tablebody"><span class="tb_blue">Copyright © 1996 - <span class="mc-variable MyVariables.Current_year variable">2022</span> <span class="mc-variable MyVariables.company_parent variable">TIBCO Software, Inc.</span> All Rights Reserved.   </span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table style="width: 100%;margin-left: auto;margin-right: 0;">
+                    <colgroup><col>
+                    </colgroup><tbody>
+                        <tr>
+                            <td>
+                                <p class="tablebody"><a href="https://www.tibco.com/company/privacy" target="_blank" rel="noopener noreferrer" class="footer">Privacy Policy</a> | <a href="https://help.scribesoft.com/scribe/en/pdf/eula/tib_scr-online_license.pdf" target="_blank" rel="noopener noreferrer" class="footer"><span class="mc-variable MyVariables.CompanyShort variable">TIBCO</span> End User License Agreement</a> | <a href="https://www.tibco.com/trademarks" target="_blank" rel="noopener noreferrer" class="footer">Trademarks</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+<script type="text/javascript" id="">(function(){function b(){!1===c&&(c=!0,Munchkin.init("957-WMM-217"))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script>
+
+<script type="text/javascript" id="">window.trustArcCookieCounter=0;window.firedTrustArcConsent=!1;
+function checkForTrustArcCookie(){trustArcCookieCounter++;if(document.cookie.match(/notice_behavior/)){var a=(a=document.cookie.match("(^|;)\\s*notice_behavior\\s*\x3d\\s*([^;]+)"))?a.pop():"";0<=a.indexOf("implied")||document.cookie.match(/cmapi_cookie_privacy/)?(window.firedTrustArcConsent=!0,analyticsDataLayer.push({event:"TrustArc_HaveConsentChoice",consentType:"implied"})):analyticsDataLayer.push({event:"TrustArc_RequiresUserInput"});clearInterval(pollforTrustArcCookie)}75<trustArcCookieCounter&&
+clearInterval(pollforTrustArcCookie)}var pollforTrustArcCookie=setInterval(checkForTrustArcCookie,50);function tePostMessageHandler(a){try{"https://consent-pref.trustarc.com"===a.origin&&"undefined"!==typeof a.data&&"submit_preferences"===JSON.parse(a.data).message&&!1===window.firedTrustArcConsent&&(window.firedTrustArcConsent=!0,analyticsDataLayer.push({event:"TrustArc_HaveConsentChoice",consentType:"expressed"}))}catch(b){console.log(b)}}window.addEventListener("message",tePostMessageHandler,!1);</script><script type="text/javascript" id="" src="./res_files/bizible.js.download"></script><img alt="" src="./res_files/ipv" style="display: none;"><img alt="" src="./res_files/u" style="display: none;"><img alt="" src="./res_files/muc" style="display: none;"></body></html>
